@@ -31,6 +31,18 @@ transitive closures on maps (which may encode infinite graphs),
 dependence analysis and bounds on piecewise step-polynomials.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/islpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/islpy-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/islpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/islpy-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/islpy/badges/version.svg)](https://anaconda.org/conda-forge/islpy)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/islpy/badges/downloads.svg)](https://anaconda.org/conda-forge/islpy)
+
 Installing islpy
 ================
 
@@ -51,7 +63,6 @@ It is possible to list all of the versions of `islpy` available on your platform
 ```
 conda search islpy --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -87,18 +98,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/islpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/islpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/islpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/islpy-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/islpy/badges/version.svg)](https://anaconda.org/conda-forge/islpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/islpy/badges/downloads.svg)](https://anaconda.org/conda-forge/islpy)
 
 
 Updating islpy-feedstock
