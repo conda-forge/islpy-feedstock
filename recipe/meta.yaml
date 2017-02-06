@@ -33,8 +33,10 @@ test:
   imports:
     - islpy
 
+  source_files:
+    - test
   commands:
-    - cd $SRC_DIR/test && python -m pytest
+    - cd test && python -m pytest
 
 about:
   home: http://github.com/inducer/islpy
