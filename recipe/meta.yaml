@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256 }}
   patches:
     - use_gmp.diff
+    - gen_wrap.diff
 
 build:
   number: 0
