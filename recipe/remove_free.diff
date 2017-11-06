@@ -1,0 +1,15 @@
+diff --git a/gen_wrap.py b/gen_wrap.py
+index 7b17a73..d43c272 100644
+--- a/gen_wrap.py
++++ b/gen_wrap.py
+@@ -1464,8 +1464,8 @@ def write_method_wrapper(gen, cls_name, meth):
+                 _str_ret = None
+             """)
+ 
+-        if meth.return_semantics is SEM_GIVE:
+-            safety("libc.free(_result)")
++        #if meth.return_semantics is SEM_GIVE:
++        #    safety("libc.free(_result)")
+ 
+         check("""
+             if _PY3 and _str_ret is not None:
