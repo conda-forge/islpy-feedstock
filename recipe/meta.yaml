@@ -8,8 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/inducer/islpy/archive/master.tar.gz
   patches:
     - use_gmp.diff
     - gen_wrap.diff
