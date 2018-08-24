@@ -24,7 +24,7 @@ requirements:
     - setuptools
     - six
     - cffi
-    - isl  # [win]
+    - isl 0.18 # [win]
   run:
     - python
     - cffi
