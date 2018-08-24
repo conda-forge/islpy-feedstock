@@ -1,27 +1,28 @@
 {% set name = "islpy" %}
-{% set version = "2018.1" %}
-{% set sha256 = "da49759d3a0266f1ea0b50fd631ef9c27b5db5fe32ac056f20dc7f9f916f96d2" %}
+{% set version = "2018.2" %}
+{% set sha256 = "be422a53b576210a0bb9775866abb6580b1e568222fc3e4e39d9e82f6d1d7253" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [win]
+  skip: True  # [win and py27]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - six
     - cffi
+    - isl 0.20    # [win]
   run:
     - python
     - cffi
