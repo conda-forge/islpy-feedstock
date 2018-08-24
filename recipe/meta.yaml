@@ -13,7 +13,6 @@ source:
   patches:
     - use_gmp.diff
     - gen_wrap.diff
-    - remove_free.diff  # [win]
 
 build:
   number: 0
