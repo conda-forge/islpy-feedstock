@@ -42,6 +42,11 @@ test:
 about:
   home: http://github.com/inducer/islpy
   license: MIT
+  license_file:
+    - doc/misc.rst
+    - isl/LICENSE
+    - isl/imath/LICENSE
+
   summary: 'Wrapper around isl, an integer set library'
 
   description: |
