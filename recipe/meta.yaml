@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2019.1" %}
-{% set sha256 = "7d3c2ba2bec8d0c20849efa5af77c0c8c711c11f18d304aa04694543ddbb68ff" %}
+{% set version = "2019.1.1" %}
+{% set sha256 = "f48765758640099df2ce91ea3b4c182d7a6892313415a177b3f0effdd810b845" %}
 
 package:
   name: {{ name|lower }}
@@ -42,6 +42,11 @@ test:
 about:
   home: http://github.com/inducer/islpy
   license: MIT
+  license_file:
+    - doc/misc.rst
+    - isl/LICENSE
+    - isl/imath/LICENSE
+  license_family: MIT
   summary: 'Wrapper around isl, an integer set library'
 
   description: |
