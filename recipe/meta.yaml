@@ -46,7 +46,7 @@ about:
     - doc/misc.rst
     - isl/LICENSE
     - isl/imath/LICENSE
-
+  license_family: MIT
   summary: 'Wrapper around isl, an integer set library'
 
   description: |
