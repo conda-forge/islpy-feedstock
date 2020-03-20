@@ -25,7 +25,7 @@ requirements:
     - isl 0.20    # [win]
   run:
     - python
-    - cffi
+    - cffi        # [python_impl != "pypy"]
     - six
 
 test:
