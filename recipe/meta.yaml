@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and py27]
 
 requirements:
@@ -21,11 +21,11 @@ requirements:
     - python
     - setuptools
     - six
-    - cffi
+    - cffi        # [python_impl != "pypy"]
     - isl 0.20    # [win]
   run:
     - python
-    - cffi
+    - cffi        # [python_impl != "pypy"]
     - six
 
 test:
