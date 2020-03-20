@@ -21,7 +21,7 @@ requirements:
     - python
     - setuptools
     - six
-    - cffi
+    - cffi        # [python_impl != "pypy"]
     - isl 0.20    # [win]
   run:
     - python
