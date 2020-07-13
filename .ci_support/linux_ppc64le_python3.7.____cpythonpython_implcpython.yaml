@@ -9,7 +9,7 @@ channel_targets:
 docker_image:
 - condaforge/linux-anvil-ppc64le
 isl:
-- '0.19'
+- '0.22'
 pin_run_as_build:
   isl:
     max_pin: x.x
