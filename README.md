@@ -5,7 +5,7 @@ Home: http://github.com/inducer/islpy
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Wrapper around isl, an integer set library
 
