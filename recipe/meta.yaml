@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -22,9 +22,12 @@ requirements:
     - setuptools
     - six
     - pybind11
+    - isl
   run:
     - python
     - six
+    # Need the same version of isl we had when the package was built
+    - {{ pin_compatible("isl", max_pin="x.x.x") }}
 
 test:
   requires:
@@ -42,8 +45,6 @@ about:
   license: MIT
   license_file:
     - doc/misc.rst
-    - isl/LICENSE
-    - isl/imath/LICENSE
   license_family: MIT
   summary: 'Wrapper around isl, an integer set library'
 
