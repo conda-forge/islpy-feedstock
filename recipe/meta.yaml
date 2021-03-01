@@ -50,7 +50,7 @@ about:
   license_family: MIT
   summary: Wrapper around isl, an integer set library
 
-  description: |4
+  description: |
 
     islpy is a Python wrapper around Sven Verdoolaege's
     [isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
