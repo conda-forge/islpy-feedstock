@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2020.2" %}
-{% set sha256 = "ee797e1284bffe897568f9cc1f063f1a6fac8d7b87596308b7467e9b870a90ef" %}
+{% set version = "2020.2.2" %}
+{% set sha256 = "7eb7dfa41d6a67d9ee4ea4bb9f08bdbcbee42b364502136b7882cfd80ff427e0" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -48,10 +48,9 @@ about:
   license_file:
     - doc/misc.rst
   license_family: MIT
-  summary: 'Wrapper around isl, an integer set library'
+  summary: Wrapper around isl, an integer set library
 
   description: |
-
     islpy is a Python wrapper around Sven Verdoolaege's
     [isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
     sets and relations of integer points bounded by linear constraints.
@@ -77,4 +76,4 @@ about:
 
 extra:
   recipe-maintainers:
-  - inducer
+    - inducer
