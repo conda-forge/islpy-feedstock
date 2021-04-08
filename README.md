@@ -13,7 +13,6 @@ Development: https://github.com/inducer/islpy
 
 Documentation: https://documen.tician.de/islpy
 
-
 islpy is a Python wrapper around Sven Verdoolaege's
 [isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
 sets and relations of integer points bounded by linear constraints.
@@ -298,6 +297,7 @@ Installing `islpy` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `islpy` can be installed with:
