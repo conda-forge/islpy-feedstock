@@ -31,6 +31,7 @@ requirements:
     - six
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
+    - {{ pin_compatible("barvinok", max_pin="x.x.x") }}  # [not win]
 
 test:
   requires:
