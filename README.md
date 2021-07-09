@@ -268,6 +268,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-islpy-green.svg)](https://anaconda.org/conda-forge/islpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/islpy.svg)](https://anaconda.org/conda-forge/islpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/islpy.svg)](https://anaconda.org/conda-forge/islpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/islpy.svg)](https://anaconda.org/conda-forge/islpy) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-islpy--barvinok-green.svg)](https://anaconda.org/conda-forge/islpy-barvinok) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/islpy-barvinok.svg)](https://anaconda.org/conda-forge/islpy-barvinok) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/islpy-barvinok.svg)](https://anaconda.org/conda-forge/islpy-barvinok) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/islpy-barvinok.svg)](https://anaconda.org/conda-forge/islpy-barvinok) |
 
 Installing islpy
 ================
@@ -279,10 +280,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `islpy` can be installed with:
+Once the `conda-forge` channel has been enabled, `islpy, islpy-barvinok` can be installed with:
 
 ```
-conda install islpy
+conda install islpy islpy-barvinok
 ```
 
 It is possible to list all of the versions of `islpy` available on your platform with:

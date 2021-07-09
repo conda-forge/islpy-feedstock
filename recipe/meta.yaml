@@ -26,13 +26,11 @@ requirements:
     - six
     - pybind11
     - isl
-    - barvinok  # [not win]
   run:
     - python
     - six
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
-    - {{ pin_compatible("barvinok", max_pin="x.x.x") }}  # [not win]
 
 test:
   requires:
@@ -44,6 +42,46 @@ test:
     - test
   commands:
     - cd test && python -m pytest
+
+outputs:
+  - name: islpy
+
+  - name: islpy-barvinok
+    build:
+      skip: true  # [win]
+      script_env:
+        - ENABLE_BARVINOK=1
+    requirements:
+      build:
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+        - pybind11                               # [build_platform != target_platform]
+        - {{ compiler('cxx') }}
+      host:
+        - python
+        - pip
+        - setuptools
+        - six
+        - pybind11
+        - isl
+        - barvinok
+      run:
+        - python
+        - six
+        - {{ pin_compatible("isl", max_pin="x.x.x") }}
+        - {{ pin_compatible("barvinok", max_pin="x.x.x") }}
+      run_constrained:
+        - islpy ==9999999999
+    test:
+      requires:
+        - pytest
+      imports:
+        - islpy
+
+      source_files:
+        - test
+      commands:
+        - cd test && python -m pytest
 
 about:
   home: http://github.com/inducer/islpy
