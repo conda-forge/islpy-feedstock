@@ -65,6 +65,7 @@ outputs:
         - pybind11
         - isl
         - barvinok
+        - pcpp
       run:
         - python
         - six
