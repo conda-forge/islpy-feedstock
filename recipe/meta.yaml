@@ -21,7 +21,6 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - pip
     - setuptools
     - six
     - pybind11
@@ -59,7 +58,6 @@ outputs:
         - {{ compiler('cxx') }}
       host:
         - python
-        - pip
         - setuptools
         - six
         - pybind11
