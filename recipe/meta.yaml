@@ -19,15 +19,14 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - pcpp
   host:
     - python
     - setuptools
-    - six
     - pybind11
     - isl
   run:
     - python
-    - six
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
 
