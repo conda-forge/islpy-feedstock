@@ -22,7 +22,7 @@ requirements:
     - pcpp
   host:
     - python
-    - setuptools
+    - pip
     - pybind11
     - isl
   run:
