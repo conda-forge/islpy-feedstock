@@ -23,7 +23,7 @@ requirements:
     - python
     - pip
     - pybind11
-    - isl
+    - isl >=0.24
     - pcpp
   run:
     - python
