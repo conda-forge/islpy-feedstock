@@ -29,6 +29,7 @@ requirements:
     - python
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
+    - pytools
 
 test:
   requires:
