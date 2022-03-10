@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2022.1.1" %}
-{% set sha256 = "79635cd71c4ea8498f7520b51daead7ccf287e092e75f3868efa77672338a711" %}
+{% set version = "2022.1.2" %}
+{% set sha256 = "6742d799b41e0b204f3f49ad9edf941728b4f2d71f3fd5cb6544bc8f392b003a" %}
 
 package:
   name: {{ name|lower }}
