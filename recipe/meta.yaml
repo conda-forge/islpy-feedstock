@@ -1,6 +1,11 @@
 {% set name = "islpy" %}
 {% set version = "2022.1.2" %}
 {% set sha256 = "6742d799b41e0b204f3f49ad9edf941728b4f2d71f3fd5cb6544bc8f392b003a" %}
+{% set build_num = 2 %}
+
+{% if not with_barvinok %}
+{% set build_num = build_num + 100 %}
+{% endif %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +16,10 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: {{ build_num }}
+  track_features:
+    # deprioritise the barvinok build
+    - islpy_barvinok  # [with_barvinok]
 
 requirements:
   build:
@@ -25,10 +33,15 @@ requirements:
     - pybind11
     - isl >=0.24
     - pcpp
+    - barvinok  # [with_barvinok]
   run:
     - python
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
+  run_constrained:
+    # when barvinok is installed deprioritise the non-barvinok build
+    - barvinok <0.0a0  # [not with_barvinok]
+
 
 test:
   requires:
