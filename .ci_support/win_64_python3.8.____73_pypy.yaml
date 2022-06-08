@@ -16,3 +16,5 @@ python:
 - 3.8.* *_73_pypy
 target_platform:
 - win-64
+with_barvinok:
+- '0'
