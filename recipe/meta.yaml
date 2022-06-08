@@ -3,7 +3,7 @@
 {% set sha256 = "6742d799b41e0b204f3f49ad9edf941728b4f2d71f3fd5cb6544bc8f392b003a" %}
 {% set build_num = 2 %}
 
-{% if with_barvinok %}
+{% if not with_barvinok %}
 {% set build_num = build_num + 100 %}
 {% endif %}
 
