@@ -8,59 +8,59 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_python3.10.____cpythonwith_barvinok0:
-        CONFIG: osx_64_python3.10.____cpythonwith_barvinok0
+      osx_64_python3.10.____cpythonwith_barvinokFalse:
+        CONFIG: osx_64_python3.10.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.10.____cpythonwith_barvinok1:
-        CONFIG: osx_64_python3.10.____cpythonwith_barvinok1
+      osx_64_python3.10.____cpythonwith_barvinokTrue:
+        CONFIG: osx_64_python3.10.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.7.____cpythonwith_barvinok0:
-        CONFIG: osx_64_python3.7.____cpythonwith_barvinok0
+      osx_64_python3.7.____cpythonwith_barvinokFalse:
+        CONFIG: osx_64_python3.7.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.7.____cpythonwith_barvinok1:
-        CONFIG: osx_64_python3.7.____cpythonwith_barvinok1
+      osx_64_python3.7.____cpythonwith_barvinokTrue:
+        CONFIG: osx_64_python3.7.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.8.____73_pypywith_barvinok0:
-        CONFIG: osx_64_python3.8.____73_pypywith_barvinok0
+      osx_64_python3.8.____73_pypywith_barvinokFalse:
+        CONFIG: osx_64_python3.8.____73_pypywith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.8.____73_pypywith_barvinok1:
-        CONFIG: osx_64_python3.8.____73_pypywith_barvinok1
+      osx_64_python3.8.____73_pypywith_barvinokTrue:
+        CONFIG: osx_64_python3.8.____73_pypywith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.8.____cpythonwith_barvinok0:
-        CONFIG: osx_64_python3.8.____cpythonwith_barvinok0
+      osx_64_python3.8.____cpythonwith_barvinokFalse:
+        CONFIG: osx_64_python3.8.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.8.____cpythonwith_barvinok1:
-        CONFIG: osx_64_python3.8.____cpythonwith_barvinok1
+      osx_64_python3.8.____cpythonwith_barvinokTrue:
+        CONFIG: osx_64_python3.8.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.9.____73_pypywith_barvinok0:
-        CONFIG: osx_64_python3.9.____73_pypywith_barvinok0
+      osx_64_python3.9.____73_pypywith_barvinokFalse:
+        CONFIG: osx_64_python3.9.____73_pypywith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.9.____73_pypywith_barvinok1:
-        CONFIG: osx_64_python3.9.____73_pypywith_barvinok1
+      osx_64_python3.9.____73_pypywith_barvinokTrue:
+        CONFIG: osx_64_python3.9.____73_pypywith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.9.____cpythonwith_barvinok0:
-        CONFIG: osx_64_python3.9.____cpythonwith_barvinok0
+      osx_64_python3.9.____cpythonwith_barvinokFalse:
+        CONFIG: osx_64_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_64_python3.9.____cpythonwith_barvinok1:
-        CONFIG: osx_64_python3.9.____cpythonwith_barvinok1
+      osx_64_python3.9.____cpythonwith_barvinokTrue:
+        CONFIG: osx_64_python3.9.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonwith_barvinok0:
-        CONFIG: osx_arm64_python3.10.____cpythonwith_barvinok0
+      osx_arm64_python3.10.____cpythonwith_barvinokFalse:
+        CONFIG: osx_arm64_python3.10.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonwith_barvinok1:
-        CONFIG: osx_arm64_python3.10.____cpythonwith_barvinok1
+      osx_arm64_python3.10.____cpythonwith_barvinokTrue:
+        CONFIG: osx_arm64_python3.10.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.8.____cpythonwith_barvinok0:
-        CONFIG: osx_arm64_python3.8.____cpythonwith_barvinok0
+      osx_arm64_python3.8.____cpythonwith_barvinokFalse:
+        CONFIG: osx_arm64_python3.8.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.8.____cpythonwith_barvinok1:
-        CONFIG: osx_arm64_python3.8.____cpythonwith_barvinok1
+      osx_arm64_python3.8.____cpythonwith_barvinokTrue:
+        CONFIG: osx_arm64_python3.8.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.9.____cpythonwith_barvinok0:
-        CONFIG: osx_arm64_python3.9.____cpythonwith_barvinok0
+      osx_arm64_python3.9.____cpythonwith_barvinokFalse:
+        CONFIG: osx_arm64_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.9.____cpythonwith_barvinok1:
-        CONFIG: osx_arm64_python3.9.____cpythonwith_barvinok1
+      osx_arm64_python3.9.____cpythonwith_barvinokTrue:
+        CONFIG: osx_arm64_python3.9.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
     maxParallel: 15
   timeoutInMinutes: 360

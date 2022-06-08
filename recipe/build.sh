@@ -1,4 +1,4 @@
-if [[ "${with_barvinok}" == "1" ]]; then
+if [[ "${with_barvinok}" == "True" ]]; then
   EXTRA_CONFIGURE_OPTIONS="--use-barvinok --no-use-shipped-imath"
 fi
 
