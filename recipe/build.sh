@@ -1,5 +1,5 @@
 if [[ "${with_barvinok}" == "1" ]]; then
-  EXTRA_CONFIGURE_OPTIONS="--use-barvinok"
+  EXTRA_CONFIGURE_OPTIONS="--use-barvinok --no-use-shipped-imath"
 fi
 
 "${PYTHON}" configure.py \
