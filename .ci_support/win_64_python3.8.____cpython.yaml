@@ -7,8 +7,6 @@ cxx_compiler:
 isl:
 - '0.25'
 pin_run_as_build:
-  isl:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
