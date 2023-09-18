@@ -25,13 +25,16 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - pybind11                               # [build_platform != target_platform]
+    - nanobind                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - cmake
+    - make
   host:
     - python
     - pip
-    - pybind11
+    - nanobind
     - isl >=0.25
+    - scikit-build
     - pcpp
     - barvinok  # [with_barvinok]
   run:

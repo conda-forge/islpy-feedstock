@@ -1,3 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+pwd
+ls -l
+
 if [[ "${with_barvinok}" == "True" ]]; then
   EXTRA_CONFIGURE_OPTIONS="--use-barvinok --no-use-shipped-imath"
 fi
