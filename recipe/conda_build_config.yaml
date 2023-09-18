@@ -1,3 +1,6 @@
 with_barvinok:
   - True   # [unix]
   - False
+
+MACOSX_SDK_VERSION:        # [osx and x86_64]
+  - "10.14"                # [osx and x86_64]
