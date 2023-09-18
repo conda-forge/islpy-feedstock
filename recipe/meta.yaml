@@ -41,6 +41,7 @@ requirements:
     - python
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
   run_constrained:
     # when barvinok is installed deprioritise the non-barvinok build
     - barvinok <0.0a0  # [not with_barvinok]
