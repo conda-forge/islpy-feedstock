@@ -26,3 +26,6 @@ target_platform:
 - linux-aarch64
 with_barvinok:
 - 'False'
+zip_keys:
+- - python
+  - channel_sources

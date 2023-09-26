@@ -20,6 +20,12 @@ jobs:
       osx_64_python3.11.____cpythonwith_barvinokTrue:
         CONFIG: osx_64_python3.11.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.12.____cpythonwith_barvinokFalse:
+        CONFIG: osx_64_python3.12.____cpythonwith_barvinokFalse
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.12.____cpythonwith_barvinokTrue:
+        CONFIG: osx_64_python3.12.____cpythonwith_barvinokTrue
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.8.____cpythonwith_barvinokFalse:
         CONFIG: osx_64_python3.8.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
@@ -49,6 +55,12 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.11.____cpythonwith_barvinokTrue:
         CONFIG: osx_arm64_python3.11.____cpythonwith_barvinokTrue
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.12.____cpythonwith_barvinokFalse:
+        CONFIG: osx_arm64_python3.12.____cpythonwith_barvinokFalse
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.12.____cpythonwith_barvinokTrue:
+        CONFIG: osx_arm64_python3.12.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.8.____cpythonwith_barvinokFalse:
         CONFIG: osx_arm64_python3.8.____cpythonwith_barvinokFalse

@@ -24,3 +24,6 @@ target_platform:
 - osx-64
 with_barvinok:
 - 'True'
+zip_keys:
+- - python
+  - channel_sources
