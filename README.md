@@ -3,7 +3,7 @@ About islpy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/islpy-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/inducer/islpy
+Home: https://github.com/inducer/islpy
 
 Package license: MIT
 
@@ -14,7 +14,7 @@ Development: https://github.com/inducer/islpy
 Documentation: https://documen.tician.de/islpy
 
 islpy is a Python wrapper around Sven Verdoolaege's
-[isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
+[isl](https://libisl.sourceforge.io/), a library for manipulating
 sets and relations of integer points bounded by linear constraints.
 
 Supported operations on sets include

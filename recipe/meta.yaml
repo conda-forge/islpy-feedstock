@@ -38,6 +38,7 @@ requirements:
     - scikit-build
     - pcpp
     - barvinok  # [with_barvinok]
+    - libxcrypt  # [linux]
   run:
     - python
     # Need the same version of isl we had when the package was built
@@ -59,7 +60,7 @@ test:
     - cd test && python -m pytest
 
 about:
-  home: http://github.com/inducer/islpy
+  home: https://github.com/inducer/islpy
   license: MIT
   license_file:
     - doc/misc.rst
@@ -68,7 +69,7 @@ about:
 
   description: |
     islpy is a Python wrapper around Sven Verdoolaege's
-    [isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
+    [isl](https://libisl.sourceforge.io/), a library for manipulating
     sets and relations of integer points bounded by linear constraints.
 
     Supported operations on sets include
