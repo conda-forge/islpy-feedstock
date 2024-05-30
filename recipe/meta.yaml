@@ -1,7 +1,7 @@
 {% set name = "islpy" %}
-{% set version = "2023.2.5" %}
-{% set sha256 = "dd74398baf36938abb7c2a9d9828cc1a2e549c6c80485cec8b06b29abfaad18f" %}
-{% set build_num = 1 %}
+{% set version = "2024.1" %}
+{% set sha256 = "46bd9fcaa1660cba52329cba1dcea5b53be8b44338b5c313f351685abdca1a0c" %}
+{% set build_num = 0 %}
 
 {% if with_barvinok == "False" %}
 {% set build_num = build_num + 100 %}
@@ -27,8 +27,10 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - nanobind                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
+    - m2-sed                                 # [build_platform == "win-64"]
   host:
     - python
     - pip
@@ -37,11 +39,11 @@ requirements:
     - scikit-build
     - pcpp
     - barvinok  # [with_barvinok]
+    - libxcrypt  # [linux]
   run:
     - python
     # Need the same version of isl we had when the package was built
     - {{ pin_compatible("isl", max_pin="x.x.x") }}
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
   run_constrained:
     # when barvinok is installed deprioritise the non-barvinok build
     - barvinok <0.0a0  # [not with_barvinok]
@@ -59,7 +61,7 @@ test:
     - cd test && python -m pytest
 
 about:
-  home: http://github.com/inducer/islpy
+  home: https://github.com/inducer/islpy
   license: MIT
   license_file:
     - doc/misc.rst
@@ -68,7 +70,7 @@ about:
 
   description: |
     islpy is a Python wrapper around Sven Verdoolaege's
-    [isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
+    [isl](https://libisl.sourceforge.io/), a library for manipulating
     sets and relations of integer points bounded by linear constraints.
 
     Supported operations on sets include

@@ -3,7 +3,7 @@ About islpy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/islpy-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/inducer/islpy
+Home: https://github.com/inducer/islpy
 
 Package license: MIT
 
@@ -14,7 +14,7 @@ Development: https://github.com/inducer/islpy
 Documentation: https://documen.tician.de/islpy
 
 islpy is a Python wrapper around Sven Verdoolaege's
-[isl](http://www.kotnet.org/~skimo/isl/), a library for manipulating
+[isl](https://libisl.sourceforge.io/), a library for manipulating
 sets and relations of integer points bounded by linear constraints.
 
 Supported operations on sets include
@@ -580,7 +580,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
