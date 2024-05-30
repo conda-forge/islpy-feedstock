@@ -10,10 +10,11 @@ fi
   --no-use-shipped-isl \
   --no-use-gmp \
   --isl-inc-dir="$PREFIX/include" \
-  --isl-lib-dir="$PREFIX/include" \
+  --isl-lib-dir="$PREFIX/lib" \
   $EXTRA_CONFIGURE_OPTIONS
 
-ls -l $CONDA_PREFIX/include
+# Finagle libxcrypt headers into build
+echo "include_directories($PREFIX/include)" >> CMakeLists.txt
 
 export VERBOSE=1
 
