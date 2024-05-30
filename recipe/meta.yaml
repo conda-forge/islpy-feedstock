@@ -30,7 +30,7 @@ requirements:
     - {{ stdlib("c") }}
     - cmake
     - make
-    - posix                               # [build_platform == "win-64"]
+    - m2-sed                                 # [build_platform == "win-64"]
   host:
     - python
     - pip

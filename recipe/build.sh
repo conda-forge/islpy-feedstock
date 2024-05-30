@@ -13,4 +13,8 @@ fi
   --isl-lib-dir="$PREFIX/include" \
   $EXTRA_CONFIGURE_OPTIONS
 
+ls -l $CONDA_PREFIX/include
+
+export VERBOSE=1
+
 "${PYTHON}" -m pip install . -vv
