@@ -32,22 +32,6 @@ jobs:
         CONFIG: linux_64_python3.12.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonwith_barvinokFalse:
-        CONFIG: linux_64_python3.8.____cpythonwith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonwith_barvinokTrue:
-        CONFIG: linux_64_python3.8.____cpythonwith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____73_pypywith_barvinokFalse:
-        CONFIG: linux_64_python3.9.____73_pypywith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____73_pypywith_barvinokTrue:
-        CONFIG: linux_64_python3.9.____73_pypywith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.9.____cpythonwith_barvinokFalse:
         CONFIG: linux_64_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
@@ -78,22 +62,6 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_python3.12.____cpythonwith_barvinokTrue:
         CONFIG: linux_aarch64_python3.12.____cpythonwith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_python3.8.____cpythonwith_barvinokFalse:
-        CONFIG: linux_aarch64_python3.8.____cpythonwith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_python3.8.____cpythonwith_barvinokTrue:
-        CONFIG: linux_aarch64_python3.8.____cpythonwith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_python3.9.____73_pypywith_barvinokFalse:
-        CONFIG: linux_aarch64_python3.9.____73_pypywith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_python3.9.____73_pypywith_barvinokTrue:
-        CONFIG: linux_aarch64_python3.9.____73_pypywith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_python3.9.____cpythonwith_barvinokFalse:
@@ -128,22 +96,6 @@ jobs:
         CONFIG: linux_ppc64le_python3.12.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_python3.8.____cpythonwith_barvinokFalse:
-        CONFIG: linux_ppc64le_python3.8.____cpythonwith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_python3.8.____cpythonwith_barvinokTrue:
-        CONFIG: linux_ppc64le_python3.8.____cpythonwith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_python3.9.____73_pypywith_barvinokFalse:
-        CONFIG: linux_ppc64le_python3.9.____73_pypywith_barvinokFalse
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_python3.9.____73_pypywith_barvinokTrue:
-        CONFIG: linux_ppc64le_python3.9.____73_pypywith_barvinokTrue
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_python3.9.____cpythonwith_barvinokFalse:
         CONFIG: linux_ppc64le_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
@@ -152,7 +104,6 @@ jobs:
         CONFIG: linux_ppc64le_python3.9.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-    maxParallel: 28
   timeoutInMinutes: 360
   variables: {}
 
