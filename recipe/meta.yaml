@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2024.1" %}
-{% set sha256 = "46bd9fcaa1660cba52329cba1dcea5b53be8b44338b5c313f351685abdca1a0c" %}
+{% set version = "2024.2" %}
+{% set sha256 = "52d4dc4f020894cb93636f64744c087df58ab9f97676d8f1dcb4d510249bc7ab" %}
 {% set build_num = 0 %}
 
 {% if with_barvinok == "False" %}
@@ -36,6 +36,7 @@ requirements:
     - pip
     - nanobind
     - isl >=0.26
+    - setuptools
     - scikit-build
     - pcpp
     - barvinok  # [with_barvinok]
