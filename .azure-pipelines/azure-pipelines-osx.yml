@@ -26,6 +26,12 @@ jobs:
       osx_64_python3.12.____cpythonwith_barvinokTrue:
         CONFIG: osx_64_python3.12.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.13.____cp313with_barvinokFalse:
+        CONFIG: osx_64_python3.13.____cp313with_barvinokFalse
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.13.____cp313with_barvinokTrue:
+        CONFIG: osx_64_python3.13.____cp313with_barvinokTrue
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonwith_barvinokFalse:
         CONFIG: osx_64_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
@@ -50,12 +56,19 @@ jobs:
       osx_arm64_python3.12.____cpythonwith_barvinokTrue:
         CONFIG: osx_arm64_python3.12.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.13.____cp313with_barvinokFalse:
+        CONFIG: osx_arm64_python3.13.____cp313with_barvinokFalse
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.13.____cp313with_barvinokTrue:
+        CONFIG: osx_arm64_python3.13.____cp313with_barvinokTrue
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.9.____cpythonwith_barvinokFalse:
         CONFIG: osx_arm64_python3.9.____cpythonwith_barvinokFalse
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.9.____cpythonwith_barvinokTrue:
         CONFIG: osx_arm64_python3.9.____cpythonwith_barvinokTrue
         UPLOAD_PACKAGES: 'True'
+    maxParallel: 18
   timeoutInMinutes: 360
   variables: {}
 
