@@ -1,7 +1,7 @@
 {% set name = "islpy" %}
 {% set version = "2024.2" %}
 {% set sha256 = "52d4dc4f020894cb93636f64744c087df58ab9f97676d8f1dcb4d510249bc7ab" %}
-{% set build_num = 0 %}
+{% set build_num = 1 %}
 
 {% if with_barvinok == "False" %}
 {% set build_num = build_num + 100 %}
@@ -35,7 +35,7 @@ requirements:
     - python
     - pip
     - nanobind
-    - isl >=0.26
+    - isl >=0.27
     - setuptools
     - scikit-build
     - pcpp
