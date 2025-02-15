@@ -18,6 +18,3 @@ target_platform:
 - win-64
 with_barvinok:
 - 'False'
-zip_keys:
-- - python
-  - channel_sources
