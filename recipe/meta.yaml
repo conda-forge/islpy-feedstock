@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2024.2" %}
-{% set sha256 = "52d4dc4f020894cb93636f64744c087df58ab9f97676d8f1dcb4d510249bc7ab" %}
+{% set version = "2025.1" %}
+{% set sha256 = "d362e161cc46b9a0cd24542a818586c78a4b2ee7dc26f682a172fda8beb913da" %}
 {% set build_num = 1 %}
 
 {% if with_barvinok == "False" %}
@@ -12,7 +12,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
