@@ -18,7 +18,7 @@ source:
 build:
   number: {{ build_num }}
   # OOM in MSVC https://github.com/conda-forge/islpy-feedstock/pull/571
-  skip: true # [win]
+  skip: true  # [win]
   track_features:
     # deprioritise the barvinok build
     - islpy_barvinok  # [with_barvinok]
