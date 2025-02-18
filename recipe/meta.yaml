@@ -28,7 +28,6 @@ requirements:
     - nanobind                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - cmake
     - make
     - m2-sed                                 # [build_platform == "win-64"]
   host:
