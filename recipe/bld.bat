@@ -1,6 +1,7 @@
 echo on
 
 sed -i "/LTO/d" CMakeLists.txt
+sed -i "/NOMINSIZE/d" CMakeLists.txt
 
 %PYTHON% configure.py --no-use-shipped-isl --no-use-gmp --isl-inc-dir=%LIBRARY_INC% --isl-lib-dir=%LIBRARY_LIB%
 
