@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2024.2" %}
-{% set sha256 = "52d4dc4f020894cb93636f64744c087df58ab9f97676d8f1dcb4d510249bc7ab" %}
+{% set version = "2025.1.2" %}
+{% set sha256 = "0aa8b385b5f08221c08f10d61b6fb47ab57be94156f1dae566dc2eb93c8b96a4" %}
 {% set build_num = 1 %}
 
 {% if with_barvinok == "False" %}
@@ -12,11 +12,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: {{ build_num }}
+  # OOM in MSVC https://github.com/conda-forge/islpy-feedstock/pull/571
+  skip: true  # [win]
   track_features:
     # deprioritise the barvinok build
     - islpy_barvinok  # [with_barvinok]
