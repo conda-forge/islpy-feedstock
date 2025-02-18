@@ -7,4 +7,6 @@ sed -i "/LTO/d" CMakeLists.txt
 
 sed -i "$ a add_compile_options('/cgthreads1')" CMakeLists.txt
 
+set VERBOSE=1
+
 %PYTHON% -m pip install . -vv
