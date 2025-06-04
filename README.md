@@ -52,6 +52,20 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
+              <td>linux_64_python3.10.____cpythonwith_barvinokFalse</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonwith_barvinokFalse" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_python3.10.____cpythonwith_barvinokTrue</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonwith_barvinokTrue" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_python3.11.____cpythonwith_barvinokFalse</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
@@ -91,6 +105,20 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.13.____cp313with_barvinokTrue" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.10.____cpythonwith_barvinokFalse</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.10.____cpythonwith_barvinokFalse" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.10.____cpythonwith_barvinokTrue</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.10.____cpythonwith_barvinokTrue" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -136,6 +164,20 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_python3.10.____cpythonwith_barvinokFalse</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_python3.10.____cpythonwith_barvinokFalse" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_python3.10.____cpythonwith_barvinokTrue</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_python3.10.____cpythonwith_barvinokTrue" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_ppc64le_python3.11.____cpythonwith_barvinokFalse</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
@@ -178,6 +220,20 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.10.____cpythonwith_barvinokFalse</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonwith_barvinokFalse" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.10.____cpythonwith_barvinokTrue</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonwith_barvinokTrue" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.11.____cpythonwith_barvinokFalse</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
@@ -217,6 +273,20 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313with_barvinokTrue" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.10.____cpythonwith_barvinokFalse</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpythonwith_barvinokFalse" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.10.____cpythonwith_barvinokTrue</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=465&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/islpy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpythonwith_barvinokTrue" alt="variant">
                 </a>
               </td>
             </tr><tr>
