@@ -27,7 +27,8 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - nanobind                               # [build_platform != target_platform]
+    - nanobind >=2                           # [build_platform != target_platform]
+    - scikit-build-core >=0.9.3              # [build_platform != target_platform]    
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
@@ -36,10 +37,9 @@ requirements:
   host:
     - python
     - pip
-    - nanobind
+    - nanobind >=2
     - isl >=0.27
-    - setuptools
-    - scikit-build
+    - scikit-build-core >=0.9.3
     - pcpp
     - barvinok  # [with_barvinok]
     - libxcrypt  # [linux]
