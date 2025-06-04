@@ -6,13 +6,6 @@ if [[ "${with_barvinok}" == "True" ]]; then
   EXTRA_PIP_INSTALL_FLAGS="--config-settings=cmake.define.USE_BARVINOK=ON"
 fi
 
-"${PYTHON}" configure.py \
-  --no-use-shipped-isl \
-  --no-use-gmp \
-  --isl-inc-dir="$PREFIX/include" \
-  --isl-lib-dir="$PREFIX/lib" \
-  $EXTRA_CONFIGURE_OPTIONS
-
 # Finagle libxcrypt headers into build
 echo "include_directories($PREFIX/include)" >> CMakeLists.txt
 
