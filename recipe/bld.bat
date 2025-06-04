@@ -11,5 +11,5 @@ set VERBOSE=1
 %PYTHON% -m pip install . -vv ^
     --config-settings=cmake.define.USE_SHIPPED_ISL=OFF ^
     --config-settings=cmake.define.USE_SHIPPED_IMATH=OFF ^
-    --config-settings=cmake.define.ISL_INC_DIRS:LIST=%LIBRARY_INC% \
+    --config-settings=cmake.define.ISL_INC_DIRS:LIST=%LIBRARY_INC% ^
     --config-settings=cmake.define.ISL_LIB_DIRS:LIST=%LIBRARY_LIB%
