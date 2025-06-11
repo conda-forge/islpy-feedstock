@@ -27,7 +27,7 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - nanobind >=2                           # [build_platform != target_platform]
+    - nanobind >=2.7                         # [build_platform != target_platform]
     - scikit-build-core >=0.9.3              # [build_platform != target_platform]    
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
@@ -37,7 +37,7 @@ requirements:
   host:
     - python
     - pip
-    - nanobind >=2
+    - nanobind >=2.7
     - isl >=0.27
     - scikit-build-core >=0.9.3
     - pcpp
