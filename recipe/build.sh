@@ -12,7 +12,7 @@ fi
 # grabbing the stubs from a binary wheel on the package index here.
 if [[ "$CONDA_BUILD_CROSS_COMPILATION" == 1 ]]; then
   EXTRA_PIP_INSTALL_FLAGS="--config-settings=cmake.define=GENERATE_STUBS=OFF $EXTRA_PIP_INSTALL_FLAGS"
-  pip download "islpy==$PKG_VERSION" --only-binary :all:
+  pip download "islpy==$PKG_VERSION" --only-binary :all: --platform manylinux_2_17_x86_64   
   unzip *.whl islpy/_isl.pyi 
 fi
 
