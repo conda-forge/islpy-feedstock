@@ -12,7 +12,9 @@ fi
 # grabbing the stubs from a binary wheel on the package index here.
 if [[ "$CONDA_BUILD_CROSS_COMPILATION" == 1 ]]; then
   EXTRA_PIP_INSTALL_FLAGS="--config-settings=cmake.define=GENERATE_STUBS=OFF $EXTRA_PIP_INSTALL_FLAGS"
-  pip download "islpy==$PKG_VERSION" --only-binary :all: --platform manylinux_2_17_x86_64 --implementation cp --abi "cp$CONDA_PY"
+  WHEEL_URL="$(curl https://pypi.org/pypi/islpy/json | jq -c '.releases."$PKG_VERSION" | .[] | select(.packagetype == "bdist_wheel")'  | jq -r --slurp '.[0].url')"
+  echo "Downloading wheel from $WHEEL_URL..."
+  curl -O "$WHEEL_URL"
   unzip *.whl islpy/_isl.pyi 
 fi
 
