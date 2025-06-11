@@ -1,7 +1,7 @@
 {% set name = "islpy" %}
-{% set version = "2025.1.5" %}
-{% set sha256 = "230ea11ce10ce7f1c75e28319fe174919d55dec4706831eb626177e02787595c" %}
-{% set build_num = 1 %}
+{% set version = "2025.2.2" %}
+{% set sha256 = "bf84a881ea668468c3df86150ff8fc004399b2dcec10cda8ede5c5870f7a8c67" %}
+{% set build_num = 0 %}
 
 {% if with_barvinok == "False" %}
 {% set build_num = build_num + 100 %}
@@ -18,7 +18,7 @@ source:
 build:
   number: {{ build_num }}
   # OOM in MSVC https://github.com/conda-forge/islpy-feedstock/pull/571
-  skip: true  # [win]
+  skip: true  # [win or py<310]
   track_features:
     # deprioritise the barvinok build
     - islpy_barvinok  # [with_barvinok]
@@ -27,7 +27,8 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - nanobind                               # [build_platform != target_platform]
+    - nanobind >=2.7                         # [build_platform != target_platform]
+    - scikit-build-core >=0.9.3              # [build_platform != target_platform]    
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
@@ -36,10 +37,9 @@ requirements:
   host:
     - python
     - pip
-    - nanobind
+    - nanobind >=2.7
     - isl >=0.27
-    - setuptools
-    - scikit-build
+    - scikit-build-core >=0.9.3
     - pcpp
     - barvinok  # [with_barvinok]
     - libxcrypt  # [linux]
