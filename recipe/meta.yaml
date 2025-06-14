@@ -1,6 +1,6 @@
 {% set name = "islpy" %}
-{% set version = "2025.2.3" %}
-{% set sha256 = "e37c89510b566ff60489abf2169b83fd7c89a39511613d8e4de4f5cd1596d79e" %}
+{% set version = "2025.2.4" %}
+{% set sha256 = "c2c7fde2c80303e64f9658781b961782fe4924184340aed9d1cdc32c4bc4a6b1" %}
 {% set build_num = 0 %}
 
 {% if with_barvinok == "False" %}
