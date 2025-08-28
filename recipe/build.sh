@@ -16,7 +16,7 @@ if [[ "$CONDA_BUILD_CROSS_COMPILATION" == 1 ]]; then
   unset PIP_NO_INDEX
   # fall back to 3.13 in case there isn't a matching-version wheel
   pip download "islpy==$PKG_VERSION" --only-binary :all: --platform macosx_11_0_x86_64 || \
-    pip download "islpy==$PKG_VERSION" --only-binary :all: --platform macosx_11_0_x86_64 --python-version 3.13 || \
+    pip download "islpy==$PKG_VERSION" --only-binary :all: --platform macosx_11_0_x86_64 --python-version 3.13
   export PIP_NO_INDEX=True
   unzip *.whl islpy/_isl.pyi 
 fi
