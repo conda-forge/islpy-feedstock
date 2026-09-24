@@ -2,11 +2,6 @@ with_barvinok:
   - True   # [unix]
   - False
 
-c_stdlib_version:          # [osx and x86_64]
-  - "10.14"                # [osx and x86_64]
-MACOSX_SDK_VERSION:        # [osx and x86_64]
-  - "10.14"                # [osx and x86_64]
-
 c_compiler:    # [win]
 - vs2022       # [win]
 cxx_compiler:  # [win]
